@@ -284,7 +284,6 @@ void SoundTriggerHwService::sendRecognitionEvent(struct sound_trigger_recognitio
         // set some defaults for the phrase if the recognition event won't be parsed properly
         // TODO: read defaults from the config
 
-        struct sound_trigger_phrase_recognition_event newEvent;
         memset(&newEvent, 0, sizeof(struct sound_trigger_phrase_recognition_event));
 
         sp<Model> model = module->getModel(event->model);
